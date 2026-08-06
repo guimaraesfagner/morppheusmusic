@@ -1,251 +1,355 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Morppheus | DJ - Producer - Ghost Producer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Markozero Records | House Music</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FAVICON usando o mesmo ícone da pasta assets -->
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<nav id="nav">
-  <div class="nav-logo">
-    <img src="logo_new_new_white_transparent.png" alt="Morppheus">
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#about">Sobre</a></li>
-    <li><a href="#music">Música</a></li>
-    <li><a href="#presskit-header">Presskit</a></li>
-    <li><a href="#ghost">Ghost</a></li>
-    <li><a href="#contact">Contato</a></li>
-  </ul>
-  <div class="nav-cta"><a href="https://edmwarriors.com/morppheus?tab=tracks&page=1" target="_blank">Comprar Ghost</a></div>
-</nav>
-
-<div class="social-rail">
-  <a href="https://www.instagram.com/morppheusmusic/" target="_blank">Instagram</a>
-  <a href="https://soundcloud.com/morppheus-morppheus" target="_blank">SoundCloud</a>
-  <a href="https://x.com/morppheusmusic" target="_blank">Twitter</a>
-</div>
-
-<section class="hero">
-  <div class="hero-bg" id="hp"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-lines"></div>
-  <div class="hero-content">
-    <p class="hero-label">Rio de Janeiro &nbsp;·&nbsp; Brasil</p>
-    <img src="logo_new_new_white_transparent.png" alt="DJ Morppheus" class="hero-logo">
-    <p class="hero-sub">DJ &nbsp;·&nbsp; Producer &nbsp;·&nbsp; Ghost Productions</p>
-    <div class="hero-btns">
-      <a href="#music" class="btn-g">Ouça meu som</a>
-      <a href="#ghost" class="btn-o">Ghost Productions</a>
-    </div>
-  </div>
-  <div class="hero-scroll" id="heroScroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="about-wrap">
-    <div class="about-show-col">
-      <img src="show.jpg" alt="DJ Morppheus — Show">
-    </div>
-    <div class="about-img-col">
-      <div class="about-img-bg" id="ap"></div>
-    </div>
-    <div class="about-txt reveal">
-      <p class="eyebrow">Sobre o Artista</p>
-      <h2 class="sec-title">DJ<br>Morppheus</h2>
-      <div class="red-bar"></div>
-      <p class="bio-pt">
-        Sou DJ Morppheus, produtor musical carioca com mais de 200.000 plays no SoundCloud e uma paixão pela música que dura a vida inteira. Com uma sólida formação como guitarrista e anos de dedicação à teoria musical, trago toda essa experiência para criar faixas exclusivas de Bass House e Tech House que se destacam na pista de dança. Meu foco é entregar produções de alta qualidade para DJs e artistas que buscam tracks originais e impactantes, perfeitas para cativar o público e levar suas carreiras para o próximo nível. Se você quer música que conecta diferentes multidões e faz a diferença nos seus sets, sou seu cara.
-      </p>
-      <p class="bio-en">
-        I'm DJ Morppheus, a music producer born in Rio de Janeiro with more than 200.000 plays on Soundcloud and a lifelong passion for music. With a solid background as a guitarist and years of dedication to music theory, I bring all this expertise to craft exclusive Bass House and Tech House tracks that stand out on the dance floor. My focus is delivering high-quality productions for DJs and artists looking for original and impactful tracks, perfect for captivating audiences and taking their careers to the next level. If you want music that connects diverse crowds and makes a difference in your sets, I'm your guy.
-      </p>
-      <div class="tags">
-        <span class="tag">EDM</span>
-        <span class="tag">House Music</span>
-        <span class="tag">Ghost Productions</span>
-        <span class="tag">Mix and Master Services </span>
-        <span class="tag">Remixes</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRESSKIT HEADER (TÍTULO) -->
-<section id="presskit-header">
-  <div class="sh">
-    <p class="eyebrow">Fotos Oficiais</p>
-    <h2 class="sec-title">Presskit</h2>
-    <div class="red-bar"></div>
-  </div>
-</section>
-
-<!-- LIGHTBOX (MODAL) -->
-<div id="lightbox">
-  <button class="lb-close" id="lb-close">✕</button>
-  <img id="lb-img" src="" alt="">
-  <div class="lb-actions">
-    <a class="lb-dl" id="lb-dl" href="" download>⬇ Baixar Imagem</a>
-  </div>
-</div>
-
-<!-- STRIP (GALERIA DE IMAGENS) -->
-<section id="strip">
-  <div class="strip-wrapper" style="overflow-x: auto; cursor: grab; scroll-behavior: smooth;">
-    <div class="strip-track" id="st">
-      <div class="strip-item"><img src="1.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="1.jpg" data-src="1.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="2.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="2.jpg" data-src="2.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="3.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="3.jpg" data-src="3.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="4.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="4.jpg" data-src="4.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="5.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="5.jpg" data-src="5.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="6.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="6.jpg" data-src="6.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="7.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="7.jpg" data-src="7.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="8.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="8.jpg" data-src="8.jpg">⬇ Download HD</a></div></div>
-      <div class="strip-item"><img src="9.jpg" alt="Morppheus"><div class="dl-overlay"><a class="dl-btn" href="9.jpg" data-src="9.jpg">⬇ Download HD</a></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="par-banner">
-  <div class="par-bg" id="pb1" style="background-image:url('pic_par_bg.jpg');"></div>
-  <div class="par-content">
-    <p class="par-quote">"A música que move multidões —<br><em>do estúdio ao mundo</em>"</p>
-  </div>
-</div>
-
-<section id="music">
-  <div class="music-wrap">
-    <div class="sh reveal">
-      <p class="eyebrow">Ouça</p>
-      <h2 class="sec-title">Meu som</h2>
-      <div class="red-bar"></div>
-    </div>
-    <div class="music-grid">
-      <div class="music-card reveal">
-        <div class="music-head">
-          <div class="plat-dot" style="background:#f50;"></div>
-          <span>SoundCloud — Autorais, Remixes &amp; Mashups</span>
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fas fa-music"></i></span>
+            <span class="logo-wordmark">MARKO<span class="accent">ZERO</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Início</a></li>
+            <li><a href="#releases">Lançamentos</a></li>
+            <li><a href="#artists">Artistas</a></li>
+            <li><a href="#events">Eventos</a></li>
+            <li><a href="#genres">Gêneros</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
         </div>
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1561325221&color=%23dc2626&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      </div>
-      <div class="music-card reveal">
-        <div class="music-head">
-          <div class="plat-dot" style="background:#1db954;"></div>
-          <span>Spotify — Discografia Completa</span>
-        </div>
-        <iframe src="https://open.spotify.com/embed/artist/7MzAbyJYyKIt23u7iTlJEn?utm_source=generator&theme=0" height="450" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+    </nav>
+</header>
 
-<div class="par-banner">
-  <div class="par-bg" id="pb2" style="background-image:url('pic_par_bg2.jpg');"></div>
-  <div class="par-content">
-    <p class="par-quote">Ghost Productions —<br><em> Onde suas ideias viram música</em></p>
-  </div>
+<main>
+
+    <section id="home" class="hero">
+        <div class="parallax-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-title">MARKO<span class="accent">ZERO</span></div>
+            <div class="hero-records">RECORDS</div>
+            <p class="hero-desc">O novo marco do house music brasileiro. Do Melodic House ao Tech House, do Afro House ao Bass House.</p>
+            <div class="hero-actions">
+                <a href="#releases" class="btn-primary">Ouvir Lançamentos &rarr;</a>
+                <a href="#artists" class="btn-secondary">Conhecer Artistas</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="releases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Catálogo</span>
+                <h2>Principais Lançamentos</h2>
+                <p class="section-subtitle">As faixas que estão movendo a cena</p>
+            </div>
+            <div class="releases-grid" id="home-releases"></div>
+            <div class="section-cta">
+                <a href="releases.html" class="btn-outline">Ver todos os lançamentos &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="artists">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Roster</span>
+                <h2>Artistas</h2>
+                <p class="section-subtitle">Conheça o talento da Markozero</p>
+            </div>
+            <div class="artists-grid">
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Malky Barros">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Malky Barros</h3>
+                        <p class="card-artist">Tech House · Bass House · Techno</p>
+                        <p style="color:var(--text-2);font-size:0.84rem;margin-bottom:14px;line-height:1.6;">Produtor e DJ carioca com mais de 30 anos de estrada. Residente em Portugal.</p>
+                        <a href="https://www.instagram.com/malkybarros" target="_blank" class="btn-play"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Morppheus">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Morppheus</h3>
+                        <p class="card-artist">Bass House · Tech House · Electronic</p>
+                        <p style="color:var(--text-2);font-size:0.84rem;margin-bottom:14px;line-height:1.6;">Nascido no Rio, guitarrista e produtor. Unindo teoria musical à energia das pistas.</p>
+                        <a href="https://www.instagram.com/morppheusmusic" target="_blank" class="btn-play"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img class="card-img" src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gibi Music">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Gibi Music</h3>
+                        <p class="card-artist">Tech House</p>
+                        <p style="color:var(--text-2);font-size:0.84rem;margin-bottom:14px;line-height:1.6;">Projeto focado na cena Tech House com identidade sonora própria e repertório 100% autoral.</p>
+                        <a href="artists.html" class="btn-play">Ver perfil &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="artists.html" class="btn-outline">Conheça todos os artistas &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Agenda</span>
+                <h2>Próximos Eventos</h2>
+                <p class="section-subtitle">Onde a Markozero vai estar</p>
+            </div>
+            <div class="events-list">
+                <div class="event-card">
+                    <div class="event-date-box">
+                        <div class="event-date-day">12</div>
+                        <div class="event-date-month">Jun</div>
+                    </div>
+                    <div class="event-divider"></div>
+                    <div class="event-info">
+                        <h3>Markozero Night — Club AURA</h3>
+                        <p>São Paulo, SP · Com Morppheus e convidados especiais</p>
+                    </div>
+                    <div class="event-meta">
+                        <div class="event-venue">Tech House / Bass House</div>
+                        <span class="card-genre">SP</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date-box">
+                        <div class="event-date-day">25</div>
+                        <div class="event-date-month">Jul</div>
+                    </div>
+                    <div class="event-divider"></div>
+                    <div class="event-info">
+                        <h3>Malky Barros Live Set — Warung</h3>
+                        <p>Balneário Camboriú, SC · Afro House session</p>
+                    </div>
+                    <div class="event-meta">
+                        <div class="event-venue">Afro House / Deep House</div>
+                        <span class="card-genre">SC</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date-box">
+                        <div class="event-date-day">08</div>
+                        <div class="event-date-month">Ago</div>
+                    </div>
+                    <div class="event-divider"></div>
+                    <div class="event-info">
+                        <h3>Tech House Summit — Laroc</h3>
+                        <p>São Paulo, SP · Line-up nacional e internacional</p>
+                    </div>
+                    <div class="event-meta">
+                        <div class="event-venue">Tech House</div>
+                        <span class="card-genre">SP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="events.html" class="btn-outline">Ver agenda completa &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="genres">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Vertentes</span>
+                <h2>Gêneros que Representamos</h2>
+                <p class="section-subtitle">Um universo de sons — do house ao techno, do bass ao global</p>
+            </div>
+            <div class="genres-container">
+                <div class="genres-category">
+                    <h3>🎧 House &amp; Main Floor</h3>
+                    <ul class="genres-list">
+                        <li>Tech House</li><li>Deep House</li><li>Afro House</li>
+                        <li>Melodic House &amp; Techno</li><li>Progressive House</li>
+                        <li>Bass House</li><li>Organic House</li><li>Nu Disco</li>
+                    </ul>
+                </div>
+                <div class="genres-category">
+                    <h3>⚡ Techno &amp; Trance</h3>
+                    <ul class="genres-list">
+                        <li>Techno Peak Time</li><li>Techno Raw / Deep</li>
+                        <li>Hard Techno</li><li>Trance Main Floor</li><li>Psy-Trance</li>
+                    </ul>
+                </div>
+                <div class="genres-category">
+                    <h3>🔊 Bass &amp; Club</h3>
+                    <ul class="genres-list">
+                        <li>Bass / Club</li><li>Dubstep</li><li>Drum &amp; Bass</li>
+                        <li>UK Garage</li><li>Breaks / Breakbeat</li><li>Trap / Future Bass</li>
+                    </ul>
+                </div>
+                <div class="genres-category">
+                    <h3>🌍 Global &amp; Latin</h3>
+                    <ul class="genres-list">
+                        <li>Amapiano</li><li>African</li><li>Latin Electronic</li>
+                        <li>Brazilian Funk</li><li>Downtempo</li><li>Ambient</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="genres.html" class="btn-outline">Explorar todos os gêneros &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-content">
+                    <span class="section-label">Nossa história</span>
+                    <h2>Sobre a Markozero</h2>
+                    <p>Fundada para impulsionar o house music brasileiro no cenário global, a Markozero Records nasce com a missão de revelar talentos autênticos e unir vertentes que vão do Melodic House ao Tech House.</p>
+                    <p>Nosso nome carrega a ideia do "marco zero" — o ponto de partida para uma nova era da música eletrônica. Com artistas como Morppheus, Malky Barros e Gibi Music, construímos um catálogo que respeita a tradição enquanto abraça as tendências.</p>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Artistas</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">9+</span>
+                            <span class="stat-label">Lançamentos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">2026</span>
+                            <span class="stat-label">Fundação</span>
+                        </div>
+                    </div>
+                    <div style="margin-top:32px;">
+                        <a href="about.html" class="btn-outline">Ler história completa &rarr;</a>
+                    </div>
+                </div>
+                <img class="about-image" src="https://images.pexels.com/photos/1537638/pexels-photo-1537638.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Markozero">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Fale conosco</span>
+                <h2>Contato</h2>
+                <p class="section-subtitle">Demos, booking e parcerias</p>
+            </div>
+            <div style="max-width:600px;margin:0 auto;">
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Assunto</label>
+                        <select>
+                            <option value="">Selecione um assunto</option>
+                            <option>Enviar Demo</option>
+                            <option>Booking / Shows</option>
+                            <option>Imprensa</option>
+                            <option>Parcerias</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea rows="4" placeholder="Sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+                <p style="text-align:center;margin-top:20px;color:var(--text-3);font-size:0.83rem;">
+                    Demo: <a href="mailto:demo@markozero.com" style="color:var(--green)">demo@markozero.com</a> &nbsp;&middot;&nbsp;
+                    Booking: <a href="mailto:booking@markozero.com" style="color:var(--green)">booking@markozero.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- PLAYER FIXO (apenas o embed e o botão fechar) -->
+<div class="fixed-player" id="fixedPlayer">
+    <div class="spotify-embed">
+        <iframe id="playerIframe" src="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+    <button class="close-player" id="closePlayer" aria-label="Fechar">✕</button>
 </div>
 
-<section id="ghost">
-  <div class="ghost-wrap">
-    <div class="sh reveal">
-      <p class="eyebrow">Serviços</p>
-      <h2 class="sec-title">Ghost Producer</h2>
-      <div class="red-bar"></div>
-    </div>
-    <div class="ghost-grid">
-      <div class="reveal">
-        <p class="ghost-txt">Produções exclusivas disponíveis para licenciamento. Tracks prontas de Bass House e Tech House com qualidade de lançamento, mixagem e masterização profissional — prontas para você lançar como sua.</p>
-        <p class="ghost-txt-en">Exclusive productions available for licensing. Ready-made Bass House and Tech House tracks with release-quality mixing and mastering — ready for you to release as your own.</p>
-        <div class="ghost-cta"><a href="https://edmwarriors.com/morppheus?tab=tracks&page=1" target="_blank" class="btn-g" style="display:inline-block;">Tracks / Ghosts Disponíveis</a></div>
-        <div class="ghost-cta"><a href="https://wa.link/bppk3c" target="_blank" class="btn-o" style="display:inline-block;">Tracks Personalizadas, Mix e Master</a></div>
-      </div>
-      <div class="ghost-feats reveal">
-        <div class="feat"><div class="feat-icon">◈</div><div class="feat-body"><strong>Produção Exclusiva</strong><span>Tracks 100% originais, nunca vendidas antes</span></div></div>
-        <div class="feat"><div class="feat-icon">◈</div><div class="feat-body"><strong>Mix &amp; Master Profissional</strong><span>Prontas para qualquer plataforma de streaming</span></div></div>
-        <div class="feat"><div class="feat-icon">◈</div><div class="feat-body"><strong>Original Mixes e Remixes</strong><span>Feitas sob demanda, de acordo com as referências</span></div></div>
-        <div class="feat"><div class="feat-icon">◈</div><div class="feat-body"><strong>Transferência Completa</strong><span>Projetos e Stems disponíveis mediante negociação</span></div></div>
-        <div class="feat"><div class="feat-icon">◈</div><div class="feat-body"><strong>Preços promocionais</strong><span>Para compra de ghosts prontos negociados via whatsapp</span></div></div>
-      </div>
-    </div>
+<a href="#home" class="floating-btn" id="backToTop" aria-label="Voltar ao topo">↑</a>
 
-    <!-- EMBED BOX COM BARRA E GRADE DE TRACKS -->
-    <div class="embed-box reveal">
-      <div class="embed-bar">
-        <span>🎚 Ghosts disponíveis — EDM Warriors</span>
-        <a href="https://edmwarriors.com/morppheus" target="_blank">Abrir no site ↗</a>
-      </div>
-      <div class="ghost-tracks-grid">
-        <a href="https://edmwarriors.com/morppheus/backdown" target="_blank" class="ghost-track-card">
-          <img src="backdown.jpg" alt="Ouvir/Comprar via EDM Warriors">
-          <div class="track-title">Backdown</div>
-        </a>
-        <a href="https://houseoftracks.com/ghost-production/all-in-my-head-4" target="_blank" class="ghost-track-card">
-          <img src="allinmyhead.jpg" alt="Ouvir/Comprar via House of Tracks">
-          <div class="track-title">All In My Head</div>
-        </a>
-        <a href="https://edmwarriors.com/morppheus/little-lick" target="_blank" class="ghost-track-card">
-          <img src="littlelick.jpg" alt="Ouvir/Comprar via EDM Warriors">
-          <div class="track-title">Little Lick</div>
-        </a>
-        <a href="https://edmwarriors.com/morppheus/sexy-party" target="_blank" class="ghost-track-card">
-          <img src="sexyparty.jpg" alt="Ouvir/Comprar via EDM Warriors">
-          <div class="track-title">Sexy Party</div>
-        </a>
-        <a href="https://edmwarriors.com/morppheus/i-just-wanna-dance" target="_blank" class="ghost-track-card">
-          <img src="ijustwannadance.jpg" alt="Ouvir/Comprar via EDM Warriors">
-          <div class="track-title">I Just Wanna Dance</div>
-            <img src="sexyparty.jpg" alt="Ouvir/Comprar via EDM Warriors">
-          <div class="track-title">Sexy Party</div>
-        </a>
-        <a href="https://houseoftracks.com/ghost-production/afro-bossa" target="_blank" class="ghost-track-card">
-          <img src="afrobossa.jpg" alt="Ouvir/Comprar via House of Tracks">
-          <div class="track-title">Afro Bossa</div>
-        </a>
-        </a>
-      </div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="logo" style="text-decoration:none;">
+                <span class="logo-icon"><i class="fas fa-music"></i></span>
+                <span class="logo-wordmark">MARKO<span class="accent">ZERO</span></span>
+            </div>
+            <p>Gravadora independente dedicada ao house music brasileiro e suas vertentes. Do Tech House ao Afro House.</p>
+            <div class="footer-socials">
+                <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-btn" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="#" class="footer-social-btn" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+                <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h5>Navegação</h5>
+            <ul>
+                <li><a href="releases.html">Lançamentos</a></li>
+                <li><a href="artists.html">Artistas</a></li>
+                <li><a href="events.html">Eventos</a></li>
+                <li><a href="genres.html">Gêneros</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Contato</h5>
+            <div class="footer-contact-item">
+                <div class="footer-contact-label">Demos</div>
+                <a href="mailto:demo@markozero.com" class="footer-contact-email">demo@markozero.com</a>
+            </div>
+            <div class="footer-contact-item">
+                <div class="footer-contact-label">Booking</div>
+                <a href="mailto:booking@markozero.com" class="footer-contact-email">booking@markozero.com</a>
+            </div>
+            <div class="footer-contact-item">
+                <div class="footer-contact-label">Imprensa</div>
+                <a href="mailto:press@markozero.com" class="footer-contact-email">press@markozero.com</a>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="contact-wrap">
-    <div class="sh reveal"><p class="eyebrow">Fale Comigo</p><h2 class="sec-title">Contato</h2><div class="red-bar"></div></div>
-    <p class="contact-sub">Para bookings, ghost productions e parcerias entre em contato.</p>
-    <div class="contact-grid">
-      <a class="c-card" href="mailto:morppheus@gmail.com"><div class="c-icon">✉</div><span class="c-lbl">Email</span><span class="c-val">morppheus@gmail.com</span></a>
-      <a class="c-card" href="https://wa.me/5521981608264" target="_blank"><div class="c-icon">💬</div><span class="c-lbl">WhatsApp</span><span class="c-val">+55 21 98160-8264</span></a>
-      <a class="c-card" href="https://www.instagram.com/morppheusmusic/" target="_blank"><div class="c-icon">📷</div><span class="c-lbl">Instagram</span><span class="c-val">@morppheusmusic</span></a>
-      <a class="c-card" href="https://soundcloud.com/morppheus-morppheus" target="_blank"><div class="c-icon">☁</div><span class="c-lbl">SoundCloud</span><span class="c-val">morppheus-morppheus</span></a>
-      <a class="c-card" href="https://open.spotify.com/intl-pt/artist/7MzAbyJYyKIt23u7iTlJEn" target="_blank"><div class="c-icon">🎵</div><span class="c-lbl">Spotify</span><span class="c-val">DJ Morppheus</span></a>
-      <a class="c-card" href="https://x.com/morppheusmusic" target="_blank"><div class="c-icon">✕</div><span class="c-lbl">Twitter / X</span><span class="c-val">@morppheusmusic</span></a>
+    <div class="footer-bottom">
+        <p>© 2026 Markozero Records. Todos os direitos reservados.</p>
+        <p>Todas as faixas são propriedade dos artistas e da gravadora.</p>
     </div>
-  </div>
-</section>
-
-<footer>
-  <img src="logo_new_new_white_transparent.png" alt="Morppheus">
-  <ul class="f-links"><li><a href="#about">Sobre</a></li><li><a href="#music">Música</a></li><li><a href="#presskit-header">Presskit</a></li><li><a href="#ghost">Ghost</a></li><li><a href="#contact">Contato</a></li></ul>
-  <span class="f-copy" id="copyrightYear"></span>
 </footer>
 
-<!-- BOTÃO FLUTUANTE "VOLTAR AO TOPO" -->
-<div class="back-to-top" id="backToTopBtn" aria-label="Voltar ao topo">
-  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="18 15 12 9 6 15"></polyline>
-  </svg>
-</div>
-
-<script src="script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

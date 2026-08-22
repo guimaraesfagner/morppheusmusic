@@ -22,6 +22,9 @@ body {
   font-family: 'Rajdhani', sans-serif;
   font-size: 16px;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::after {
@@ -384,7 +387,7 @@ nav.scrolled {
 .about-img-bg {
   position: absolute;
   inset: -18%;
-  background: url('DSC_0315_1_.JPG') center/cover no-repeat;
+  background: url('about-bg-optimized.jpg') center/cover no-repeat;
   will-change: transform;
   filter: brightness(.78);
 }
